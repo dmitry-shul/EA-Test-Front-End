@@ -2,10 +2,12 @@
   position: fixed;
   left: -380px;
   top: -280px;
+  z-index: -10;
 }
 
 .svgRight {
   position: fixed;
   right: -440px;
   top: -520px;
+  z-index: -10;
 }

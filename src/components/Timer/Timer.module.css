@@ -1,0 +1,28 @@
+.timer {
+  width: 588px;
+  height: 129px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sign:not(:last-child):after {
+  content: ":";
+  position: absolute;
+  font-size: 72px;
+  font-weight: 600;
+  color: #162C4E;
+  left: 136px;
+}
+
+.time {
+  color: #162C4E;
+  font-size: 72px;
+  font-weight: 600;
+  text-align: center;
+}

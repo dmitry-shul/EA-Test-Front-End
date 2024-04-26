@@ -1,0 +1,19 @@
+.sign {
+  width: 132px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg {
+  position: absolute;
+  z-index: 0;
+}
+
+.text {
+  z-index: 1;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
