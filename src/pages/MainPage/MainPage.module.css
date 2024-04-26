@@ -1,0 +1,10 @@
+.main {
+  width: 100%;
+  height: calc(100vh - 192px);
+}
+
+.footer {
+  width: 100%;
+  height: 192px;
+  background: #162C4E;
+}

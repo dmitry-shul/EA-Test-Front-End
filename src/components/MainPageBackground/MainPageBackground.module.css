@@ -1,0 +1,11 @@
+.svgLeft {
+  position: fixed;
+  left: -380px;
+  top: -280px;
+}
+
+.svgRight {
+  position: fixed;
+  right: -440px;
+  top: -520px;
+}
