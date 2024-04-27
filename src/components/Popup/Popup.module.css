@@ -1,0 +1,94 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(22, 44, 78, 0.6);
+  align-items: center;
+  justify-content: center;
+  display: none;
+  padding: 40px;
+  z-index: 1000;
+}
+
+.popup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  border-radius: 2px;
+  width: 320px;
+  height: 370px;
+  padding: 0 16px 0 24px;
+}
+
+.active {
+  display: flex;
+}
+
+.popup h3 {
+  font-size: 36px;
+}
+
+.popup p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  border-radius: 40px;
+  background: #1D4169;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.closeCross {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 22px;
+  right: 18px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.popup::before {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 2px;
+  background: hsla(198, 73%, 27%, 0.5);
+  border-radius: 50px;
+  transform: rotate(-45deg);
+  top: 36px;
+  right: 16px;
+  z-index: 1;
+}
+
+.popup::after {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 2px;
+  background: hsla(198, 73%, 27%, 0.5);
+  border-radius: 50px;
+  transform: rotate(45deg);
+  top: 36px;
+  right: 16px;
+  z-index: 1;
+}

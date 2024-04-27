@@ -5,25 +5,60 @@
   justify-content: space-between;
 }
 
-.sign {
+.signs {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.sign:not(:last-child):after {
+.signs:not(:last-child):after {
   content: ":";
   position: absolute;
   font-size: 72px;
   font-weight: 600;
   color: #162C4E;
   left: 136px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .time {
-  height: 100%;
+  height: 72px;
   color: #162C4E;
   font-size: 72px;
   font-weight: 600;
-  text-align: center;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .timer {
+    width: 358px;
+    height: 82px;
+  }
+  
+  .signs:not(:last-child):after {
+    height: 36px;
+    font-size: 36px;
+    left: 70px;
+  }
+  
+  .time {
+    height: 36px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .timer {
+    width: 310px;
+  }
+  
+  .signs:not(:last-child):after {
+    left: 70px;
+  }
 }

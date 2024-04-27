@@ -28,6 +28,9 @@
   background: none;
   border-radius: 40px 0 0 40px;
   padding: 0 0 0 27px;
+  font-size: 20px;
+  font-weight: 500;
+  color: hsl(0, 0%, 0%);
 }
 
 .inputEmail::placeholder {
@@ -52,4 +55,41 @@
 
 .btn:hover {
   opacity: 0.9;
+}
+
+@media screen and (max-width: 1100px) {
+  .footer {
+    height: 160px;
+  }
+
+  .form {
+    width: 360px;
+    height: 41px;
+  }
+
+  .inputEmail {
+    width: calc(100% - 41px);
+    padding: 0 0 0 20px;
+    font-size: 16px;
+  }
+
+  .inputEmail::placeholder {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 33px;
+    height: 33px;
+    right: 4px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer {
+    height: 141px;
+  }
+
+  .form {
+    width: 280px;
+  }
 }

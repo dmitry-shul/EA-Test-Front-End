@@ -2,12 +2,17 @@ import Button from "../../components/Button/Button"
 import Footer from "../../components/Footer/Footer"
 import MainPageBackground from "../../components/MainPageBackground/MainPageBackground"
 import Timer from "../../components/Timer/Timer"
+import Popup from "../../components/Popup/Popup"
 import styles from "./MainPage.module.css"
+import { useState } from "react"
 
 const MainPage = () => {
+  const [visible, setVisible] = useState(false);
+
   return (
     <>
       <div className={styles.main}>
+        <Popup visible={visible} setVisible={setVisible} />
         <MainPageBackground />
         <article className={styles.article}>
           <a className={styles.logo} href="/">

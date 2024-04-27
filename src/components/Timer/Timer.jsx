@@ -3,6 +3,7 @@ import WaveSign from './../WaveSign/WaveSign.jsx'
 import { useEffect, useState } from "react";
 
 const signsName = ["Days", "Hours", "Minutes", "Seconds"]
+const shortSignsName = ["DD", "HH", "MM", "SS"]
 
 const Timer = ({date}, props) => {
   const [currentData, setCurrentData] = useState([]);
@@ -34,10 +35,10 @@ const Timer = ({date}, props) => {
   return (
     <div {...props} className={styles.timer}>
       {
-        signsName.map((sign, i) => 
-          <div className={styles.sign} key={sign}>
-            <div className={styles.time}>{currentData[i]}</div>
-            <WaveSign text={sign} />
+        currentData.map((date, i) => 
+          <div className={styles.signs} key={i}>
+            <div className={styles.time}>{date}</div>
+            <WaveSign text={window.innerWidth > 1100 ? signsName[i] : shortSignsName[i]} />
           </div>
         )
       }

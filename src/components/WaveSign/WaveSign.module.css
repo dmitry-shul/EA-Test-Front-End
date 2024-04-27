@@ -4,6 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(./assets/images/waveSign.png);
+  background-repeat: no-repeat;
+  background-size: 132px 54px;
 }
 
 .svg {
@@ -16,4 +19,22 @@
   color: white;
   font-size: 16px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 1100px) {
+  .sign {
+    width: 64px;
+    height: 40px;
+    background-image: url(./assets/images/waveSignSmall.png);
+    background-size: 64px 40px;
+  }
+
+  .svg {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text {
+    font-size: 12px;
+  }
 }
