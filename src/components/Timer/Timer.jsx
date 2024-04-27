@@ -7,6 +7,7 @@ const shortSignsName = ["DD", "HH", "MM", "SS"]
 
 const Timer = ({date}, props) => {
   const [currentData, setCurrentData] = useState([]);
+  const [dateLoaded, setDateLoaded] = useState(false);
 
   useEffect(() => {
     let timer = setInterval(() => {
@@ -28,19 +29,24 @@ const Timer = ({date}, props) => {
     let res = [Math.floor(hour / 24), Math.floor(hour % 24), Math.floor(min % 60), Math.floor(sec % 60)]
     res = res.map((item, i) => item<10 && i!==0 ? `0${item}` : item)
     setCurrentData(res) 
+    setDateLoaded(true)
   }
 
   
 
   return (
     <div {...props} className={styles.timer}>
-      {
-        currentData.map((date, i) => 
-          <div className={styles.signs} key={i}>
-            <div className={styles.time}>{date}</div>
-            <WaveSign text={window.innerWidth > 1100 ? signsName[i] : shortSignsName[i]} />
+      { 
+        !dateLoaded
+        ? <div className={styles.loaderWrap}>
+            <div className={styles.loader}></div>
           </div>
-        )
+        : currentData.map((date, i) => 
+            <div className={styles.signs} key={i}>
+              <div className={styles.time}>{date}</div>
+              <WaveSign text={window.innerWidth > 1100 ? signsName[i] : shortSignsName[i]} />
+            </div>
+          )
       }
     </div>
   )
