@@ -1,10 +1,46 @@
 .main {
   width: 100%;
   height: calc(100vh - 192px);
+  display: flex;
+  justify-content: center;
 }
 
-.footer {
-  width: 100%;
-  height: 192px;
-  background: #162C4E;
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.logo {
+  margin-top: 60px;
+  margin-bottom: 93px;
+}
+
+.article h1 {
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #162c4e7d;
+}
+
+.text {
+  width: 423px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000c8;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.eventBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 72px;
+}
+
+.eventBlock p {
+  margin-bottom: 12px;
+}
+
