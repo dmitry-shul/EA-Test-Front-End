@@ -94,6 +94,10 @@
     margin-bottom: 15px;
   }
 
+  .allEvents {
+    padding: 0 40px 40px 40px;
+  }
+
   .allEvents__title {
     font-size: 36px;
   }
@@ -123,6 +127,10 @@
   .text {
     margin-top: 16px;
   }
+
+  .allEvents {
+    padding: 0 20px 20px 20px;
+  }
 }
 
 @media screen and (max-height: 960px) {
@@ -139,7 +147,5 @@
     margin-top: 20px;
   }
 
-  .allEvents {
-    padding: 0 20px 20px 20px;
-  }
+  
 }
