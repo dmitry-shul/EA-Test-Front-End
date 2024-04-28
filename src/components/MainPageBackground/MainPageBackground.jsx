@@ -2,7 +2,7 @@ import styles from "./MainPageBackground.module.css"
 
 export default function MainPageBackground() {
   return (
-    <div> 
+    <div style={{overflow: "hidden"}}> 
       <svg className={styles.svgLeft} width="852" height="689" viewBox="0 0 852 689" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_i_10_94)">
         <path fillRule="evenodd" clipRule="evenodd" d="M425.433 680.206C529.67 650.756 444.103 573.601 480.476 525.513C524.66 467.098 873.186 393.384 850.434 296.798C781.956 142.994 576.156 236.059 524.454 180.514C474.331 126.665 386.424 42.235 318.183 14.7108C252.865 -11.6348 112.989 -10.9907 91.1671 115.785C77.2497 211.144 120.633 234.434 89.6705 283.159C56.8859 334.752 5.34095 377.522 0.901119 438.473C-3.91048 504.526 15.1547 577.788 65.0352 621.353C113.584 663.756 186.811 646.033 250.446 656.425C309.998 666.15 370.439 705.063 425.433 680.206Z" fill="#162C4E"/>

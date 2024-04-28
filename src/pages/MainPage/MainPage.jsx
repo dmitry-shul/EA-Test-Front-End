@@ -5,6 +5,7 @@ import Timer from "../../components/Timer/Timer"
 import Popup from "../../components/Popup/Popup"
 import styles from "./MainPage.module.css"
 import { useState } from "react"
+import Accordion from "../../components/Accordion/Accordion"
 
 const MainPage = () => {
   const [visible, setVisible] = useState(false);
@@ -30,6 +31,11 @@ const MainPage = () => {
       </div>
 
       <Footer setSubmitError={setSubmitError} setVisible={setVisible} />
+
+      <div className={styles.allEvents}>
+        <h2 className={styles.allEvents__title}>All events</h2>
+        <Accordion />
+      </div>
     </>
   )
 }

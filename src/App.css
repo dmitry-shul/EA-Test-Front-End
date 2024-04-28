@@ -47,3 +47,15 @@ textarea {
 button {
   border: none;
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #b1b1b1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #555555;
+}

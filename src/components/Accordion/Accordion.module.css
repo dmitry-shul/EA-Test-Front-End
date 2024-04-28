@@ -1,0 +1,12 @@
+.accordion {
+  max-width: 1705px;
+  width: 100%;
+  display: flex;
+}
+
+@media screen and (max-width: 1550px) {
+  .accordion {
+    max-width: 688px;
+    flex-direction: column;
+  }
+}

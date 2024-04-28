@@ -1,0 +1,261 @@
+.accordion__item {
+  width: 100%;
+  height: 682px;
+  display: flex;
+  transition: 1s;
+}
+
+.accordion__item_active {
+  width: 85px;
+}
+
+.item__header {
+  width: 85px;
+  height: 100%;
+  background: #162C4E;
+  background-position-x: center;
+  cursor: pointer;
+  color: white;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 2px solid #DF2224;
+}
+
+.item__wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: #162c4ea7;
+}
+
+.item__header h4 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);  
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.item__header p {
+  font-size: 40px;
+  margin-top: 34px;
+  margin-bottom: 20px;
+}
+
+.item__content {
+  width: calc(100% - 85px);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.info {
+  max-width: 364px;
+  height: 100%;
+  background: rgb(18, 18, 18, 0.8);
+  backdrop-filter: blur(25px);
+  color: white;
+  padding: 0 66px 0 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.info h5 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.info p {
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.info__btn {
+  color: white;
+  width: 256px;
+  height: 62px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 2px solid #fff;
+  border-left: 6px solid #fff;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.info__btn:hover {
+  border-left: 20px solid #fff;
+}
+
+.info__btn a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1550px) {
+  .accordion__item {
+    height: 550px;
+    flex-direction: column;
+  }
+
+  .accordion__item_active {
+    width: 100%;
+    height: 85px;
+  }
+
+  .item__header {
+    order: 2;
+    width: 100%;
+    min-height: 85px;
+    max-height: 85px;
+    border-top: 4px solid #fff;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #DF2224;
+  }
+  
+  .item__wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background: #162c4ea7;
+  }
+  
+  .item__header h4 {
+    writing-mode: horizontal-tb;
+    transform: none;  
+    font-weight: 400;
+    font-size: 24px;
+    order: 2;
+  }
+  
+  .item__header p {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
+    margin-right: 32px;
+    order: 1;
+  }
+
+
+
+  .item__content {
+    width: 100%;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    order: 1;
+  }
+  
+  .info {
+    max-width: none;
+    position: relative;
+    width: 100%;
+    height: 192px;
+    background: rgb(18, 18, 18, 0.8);
+    backdrop-filter: blur(25px);
+    color: white;
+    padding: 25px 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .info h5 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .info p {
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    font-weight: 300;
+  }
+  
+  .info__btn {
+    color: white;
+    width: 170px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #fff;
+    border-left: 6px solid #fff;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .accordion__item {
+    height: 440px;
+  }
+  
+  .item__header h4 {
+    font-size: 18px;
+  }
+  
+  .item__header p {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-right: 16px;
+  }
+
+
+
+  .item__content {
+    height: 376px;
+    background-position: top;
+    background-size: cover;
+  }
+  
+  .info {
+    height: 158px;
+    padding: 24px 0 0 20px;
+  }
+  
+  .info h5 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .info p {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 22px;
+    font-weight: 300;
+  }
+  
+  .info__btn {
+    color: white;
+    width: 170px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #fff;
+    border-left: 6px solid #fff;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+}

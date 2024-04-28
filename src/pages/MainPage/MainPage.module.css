@@ -3,6 +3,8 @@
   height: calc(100vh - 192px);
   display: flex;
   justify-content: center;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .article {
@@ -43,6 +45,23 @@
 .eventBlock p {
   font-size: 18px;
   margin-bottom: 12px;
+}
+
+.allEvents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 108px 100px 108px;
+}
+
+.allEvents__title {
+  font-size: 72px;
+  font-weight: 700;
+  color: #162c4e7d;
+  margin-top: 110px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1100px) {
@@ -99,5 +118,24 @@
   
   .text {
     margin-top: 16px;
+  }
+}
+
+@media screen and (max-height: 960px) {
+  .logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .article h1 {
+    font-size: 50px;
+  }
+  
+  .eventBlock {
+    margin-top: 20px;
+  }
+
+  .allEvents {
+    padding: 0 20px 20px 20px;
   }
 }

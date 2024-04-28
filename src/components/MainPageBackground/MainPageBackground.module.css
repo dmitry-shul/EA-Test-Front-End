@@ -1,12 +1,12 @@
 .svgLeft {
-  position: fixed;
+  position: absolute;
   left: -380px;
   top: -280px;
   z-index: -10;
 }
 
 .svgRight {
-  position: fixed;
+  position: absolute;
   right: -440px;
   top: -520px;
   z-index: -10;
