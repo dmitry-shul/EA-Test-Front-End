@@ -31,12 +31,13 @@
 
 .popup h3 {
   font-size: 36px;
+  text-align: center;
+  margin-bottom: 28px;
 }
 
 .popup p {
   font-size: 16px;
   text-align: center;
-  margin-top: 28px;
   margin-bottom: 30px;
 }
 

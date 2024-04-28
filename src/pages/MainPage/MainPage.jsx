@@ -8,11 +8,12 @@ import { useState } from "react"
 
 const MainPage = () => {
   const [visible, setVisible] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   return (
     <>
       <div className={styles.main}>
-        <Popup visible={visible} setVisible={setVisible} />
+        <Popup visible={visible} setVisible={setVisible} submitError={submitError} />
         <MainPageBackground />
         <article className={styles.article}>
           <a className={styles.logo} href="/">
@@ -28,7 +29,7 @@ const MainPage = () => {
         </article>
       </div>
 
-      <Footer />
+      <Footer setSubmitError={setSubmitError} setVisible={setVisible} />
     </>
   )
 }
