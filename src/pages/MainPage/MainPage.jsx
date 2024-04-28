@@ -4,12 +4,13 @@ import MainPageBackground from "../../components/MainPageBackground/MainPageBack
 import Timer from "../../components/Timer/Timer"
 import Popup from "../../components/Popup/Popup"
 import styles from "./MainPage.module.css"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import Accordion from "../../components/Accordion/Accordion"
 
 const MainPage = () => {
   const [visible, setVisible] = useState(false);
   const [submitError, setSubmitError] = useState("");
+  const allEventsRef = useRef(null)
 
   return (
     <>
@@ -30,9 +31,9 @@ const MainPage = () => {
         </article>
       </div>
 
-      <Footer setSubmitError={setSubmitError} setVisible={setVisible} />
+      <Footer allEventsRef={allEventsRef} setSubmitError={setSubmitError} setVisible={setVisible} />
 
-      <div className={styles.allEvents}>
+      <div ref={allEventsRef} className={styles.allEvents}>
         <h2 className={styles.allEvents__title}>All events</h2>
         <Accordion />
       </div>

@@ -93,6 +93,10 @@
     font-size: 16px;
     margin-bottom: 15px;
   }
+
+  .allEvents__title {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 550px) {

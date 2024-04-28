@@ -3,7 +3,7 @@ import styles from "./Footer.module.css"
 import ArrowRightSVG from "./../SVG/ArrowRightSVG"
 import axios from 'axios';
 
-const Footer = ({setSubmitError, setVisible}) => {
+const Footer = ({allEventsRef, setSubmitError, setVisible}) => {
   const [email, setEmail] = useState("");
   const [validation, setValidation] = useState(true);
 
@@ -51,6 +51,8 @@ const Footer = ({setSubmitError, setVisible}) => {
           <ArrowRightSVG />
         </button>
       </form>
+
+      <div onClick={() => window.scrollTo(0, allEventsRef.current.scrollHeight)} className={styles.arrowDown}>Other Events &#8595;</div>
     </div>
   )
 }
