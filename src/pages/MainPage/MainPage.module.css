@@ -133,7 +133,7 @@
   }
 }
 
-@media screen and (max-height: 1060px) {
+@media screen and (max-height: 860px) {
   .logo {
     margin-top: 20px;
     margin-bottom: 20px;
