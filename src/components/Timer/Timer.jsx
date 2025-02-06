@@ -13,7 +13,8 @@ const Timer = ({date}, props) => {
     let timer = setInterval(() => {
       countCurrentData()
     }, 1000)
-    if(currentData == [0, 0, 0, 0]) {
+    
+    return () => if(currentData == [0, 0, 0, 0]) {
       clearInterval(timer);
     }
   }, []);
